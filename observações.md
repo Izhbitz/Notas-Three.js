@@ -21,6 +21,8 @@ Valores normais da iluminação atmosférica (gradiente light~black at the botto
 var light = new THREE.HemisphereLight(0xffffff, 0x000000, 2)
 ```
 
+# Código
+
 **ERROR**: Inspecionando, descobrimos rapidamente que o navegador não gosta do método ```requestAnimationFrame()```. 
 
 Resolução: forçar o jsdom-global a adicionar o ```requestAnimationFrame()``` como um objeto global. Claro, antes de rodar os testes. 
